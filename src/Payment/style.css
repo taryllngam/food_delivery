@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dets {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-image:  url('../assets/food.png');
+    background-size: cover;
+}
+
+.card-dets {
+    display: flex;
+    flex-direction: column;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 20px;
+    border: 1px solid black;
+    padding: 10%;
+    opacity: 90%;
+    background:linear-gradient(to right, #DECBA4, #3E5151);
+}
+
+.cards {
+    display: flex;
+    gap: 10rem;
+}
+
+.cards h1 {
+    font-size: 22px;
+}
+
+.pays {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    font-size: 40px;
+    color: white;
+}
+
+.pays {
+    @apply	 text-orange-400
+}
+
+@media screen and (max-width: 600px){
+    .cards {
+        display: flex;
+        gap: 0.8rem;
+    }
+
+    .pays {
+        display: flex;
+        flex-direction: row;
+        gap: 0.3rem;
+        font-size: 20px;
+        @apply	 text-orange-400
+    }
+
+    .cards h1 {
+        font-size: 0.8rem;
+    }
+    
+}

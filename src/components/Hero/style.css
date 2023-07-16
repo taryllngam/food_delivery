@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container1 {
+    @apply mt-20 flex gap-2 
+}
+
+.container1 h1 {
+    @apply text-red-400 text-3xl first-line:uppercase first-line:tracking-widest
+    first-letter:text-7xl first-letter:font-bold first-letter:text-red-400
+    first-letter:mr-3 first-letter:float-left
+}
+
+.container1  {
+    margin: 3rem 5rem;
+    @apply text-xl text-red-400 
+}
+
+
+
+.mins{
+    @apply  before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-red-400 relative inline-block 
+}
+
+.min{
+    @apply relative text-white 
+}
+
+.intro {
+    @apply flex flex-col gap-10 pl-1 self-center m-auto
+}
+
+.hero-image {
+    width: 40vw;
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .container1 {
+        @apply mt-20 flex flex-col gap-2 
+    }
+
+    .hero-image {
+        width: 80vw;
+        padding-top: 1rem;
+    }
+
+    .container1  {
+        margin: 3rem 2rem;
+        @apply text-xl text-red-400 
+    }
+}
