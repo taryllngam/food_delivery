@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @layer scroll-m-0 croll-p-0;
+}
+
+.food img {
+  @apply w-80	h-52;
+}
+
+.head {
+  @apply flex self-center	justify-center my-6 text-3xl text-red-400;
+}
+
+.wrap {
+  @apply flex flex-wrap gap-9 justify-evenly mx-9 pb-20;
+}
+
+.food .foodStuffs {
+  @apply text-xl  p-4  text-black;
+}
+
+.food .foodStuffs {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 4%;
+}
+
+.food .foodStuffs:hover {
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 54px 75px,
+    rgba(0, 0, 0, 0.2) 0px -12px 60px, rgba(0, 0, 0, 0.2) 0px 4px 6px,
+    rgba(0, 0, 0, 0.2) 0px 12px 13px, rgba(0, 0, 0, 0.5) 0px -3px 5px;
+  transition: 0.6s;
+}
+
+.btn {
+  @apply border  border-yellow-800 rounded p-2 bg-red-400;
+}
+
+.headTag {
+  @apply before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-red-400 relative inline-block;
+}
+
+.nameTag {
+  @apply relative text-white;
+}
+
+.head {
+  width: 100vw;
+}
+
+@media screen and (max-width: 600px) {
+
+    button {
+        width: 3rem;
+    }
+    
+  .btn {
+    width: 5rem;
+    justify-self: center;
+    align-self: center;
+    @apply border  border-yellow-800 rounded  bg-red-400;
+  }
+
+  .food img {
+    width: 25rem;
+    height: 8rem;
+  }
+}

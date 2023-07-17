@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    @layer scroll-m-0 croll-p-0;
+  }
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: 0 2rem 7rem;
+}
+
+.disect {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    margin: auto;
+    padding-top: 3rem;
+}
+
+.about {
+    @apply text-red-400 text-xl
+}
+
+.about-header {
+    display: flex;
+    flex-direction: row;
+}
+
+.about-head {
+    @apply  before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-red-400 relative inline-block 
+}
+
+.about-header {
+    @apply relative text-white text-xl
+}
+
+.decor {
+    @apply  before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-red-400 relative inline-block 
+}
+
+.decor h2 {
+    @apply relative text-white text-7xl
+}
+
+.about p {
+    max-width: 300px;
+}
+
+.food {
+    @apply text-white text-2xl
+}
+
+#about-img{
+    width: 50vw;
+    height: 80%;
+}
+
+@media screen and (max-width: 600px) {
+    #about-img{
+        width: 70vw;
+        height: 80%;
+        justify-self: center;
+        align-self: center;
+        margin: auto;
+    }  
+
+    .disect {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        margin: auto;
+        padding-top: 1rem;
+    }
+
+    .about p {
+        max-width: 400px;
+        font-size: 1rem;
+    }
+
+    .about-header {
+        @apply relative text-white text-lg
+    }
+
+    .decor h2 {
+        @apply relative text-white text-xl
+    }
+    
+}
