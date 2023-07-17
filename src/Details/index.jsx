@@ -15,13 +15,13 @@ export default function Details() {
     const food = value.find((ele) => ele.id === +params.id);
     setcurrentFood(food);
     console.log(food, params);
-  }, []);
+  }, [value,params]);
 
   return (
     <div className="display">
       <div className="display1">
         <div>
-          <img src={currentFood?.image} />
+          <img src={currentFood?.image} alt=""/>
         </div>
         <div className="description">
           <h1 className="names">

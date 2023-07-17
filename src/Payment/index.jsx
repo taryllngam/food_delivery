@@ -8,11 +8,11 @@ import { FoodContext } from "../context/FoodContext";
 
 
 export default function Payment() {
-  const { meta, getCardNumberProps, getExpiryDateProps, getCVCProps } = usePaymentInputs();
+  const {  getCardNumberProps, getExpiryDateProps, getCVCProps } = usePaymentInputs();
   let { id } = useParams();
   const navigate = useNavigate();
 	const {value} = useContext(FoodContext)
-  const food =value.find((ele) => ele.id == id);
+  const food =value.find((ele) => ele.id === id);
 
   return (
     <div className='dets'>
@@ -44,6 +44,9 @@ export default function Payment() {
       <button  id='but1'    onClick={() => {
               navigate(`/billing/${id}`);
             }}>Submit</button>
+    </div>
+    <div>
+      <h1>{food?.name}</h1>
     </div>
     </div>
   );

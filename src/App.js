@@ -2,7 +2,6 @@ import "./App.css";
 import Landing from "./Landing-page/index";
 import Billing from "./Billing-form";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { useState } from "react";
 import Details from "./Details";
 import { FoodProvider, useLocalStorage } from "./context/FoodContext";
 import Payment from "./Payment";

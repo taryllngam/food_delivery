@@ -42,7 +42,7 @@
     border-radius: 150px;
     background: green;
     transform: translateY(-50%);
-    transform: translateX(270%);
+    transform: translateX(283%);
     align-self: center;
     justify-content: center;
 }
@@ -65,6 +65,7 @@
     display: flex;
     gap: 15%;
     padding-top: 2rem;
+    /* margin: 0 21rem; */
 }
 
 .bttn {

@@ -1,8 +1,6 @@
-import React, { useContext, useState } from "react";
+import React from "react";
 import { useNavigate } from "react-router";
 import '../Catalog/style.css'
-import Details from "../../Details";
-import { FoodContext } from "../../context/FoodContext";
 import { useFoodItems } from "../../context/FoodContext";
 
 

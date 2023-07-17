@@ -94,17 +94,15 @@
 
 import React from "react";
 import { useEffect } from "react";
-import { useContext } from "react";
 import { useState } from "react";
 import { GiCancel } from "react-icons/gi";
-import { Navigate, useNavigate } from "react-router";
-import { FoodContext, useLocalStorage } from "../../context/FoodContext";
+// import {  useNavigate } from "react-router";
+import { useLocalStorage } from "../../context/FoodContext";
 import "../Admin/style.css";
 import Nav from "../Navbar";
 export default function Admin() {
   const { value, setValue } = useLocalStorage("foodStorage", []);
   const [localData, setLocalData] = useState(value);
-  const navigate = useNavigate;
   const [showForm, setShowForm] = useState(false);
   const [showAddForm, setShowAddForm] = useState(false);
   const [foodStorage, setfoodStorage] = useState({

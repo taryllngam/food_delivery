@@ -2,7 +2,7 @@ import React from "react"
 import "../Navbar/style.css"
 import { FaUtensils } from 'react-icons/fa';
 import { Link } from "react-router-dom";
-import { Admin } from "../Admin"
+
 
 
  export default function Nav() {

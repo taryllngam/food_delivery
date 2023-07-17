@@ -7,18 +7,18 @@ export default function Footer() {
   return (
     <div className='foot' id='contact'>
       <div className='owners-info'>
-        <p>CONTACT: <a href="#">+237-670-716-777</a></p>
-        <p>EMAIL: <a href="#">taryllngam@gmail.com</a></p>
-        <p>LOCATION: <a href="#">Yaounde,Cameroon</a></p>
+        <p id='number'>CONTACT: <a href="#number">+237-670-716-777</a></p>
+        <p id='email'>EMAIL: <a href="#email">taryllngam@gmail.com</a></p>
+        <p id='location'>LOCATION: <a href="#location">Yaounde,Cameroon</a></p>
       </div>
       <div className='socials'>
         <div><h1>FOLLOW US</h1></div>
         <div className='social'>
-      <a href=""><AiFillFacebook/></a>
-      <a href=""><AiFillInstagram/></a>
-      <a href=""><AiFillTwitterSquare/></a>
-      <a href=""><AiFillLinkedin/></a>
-      <a href=""><FaSnapchatSquare/></a>
+      <a id='facebook' href="#facebook"><AiFillFacebook/></a>
+      <a id='instagram' href="#instagram"><AiFillInstagram/></a>
+      <a id='twitter' href="#twitter"><AiFillTwitterSquare/></a>
+      <a id='linkedin' href="#linkedin"><AiFillLinkedin/></a>
+      <a id='snapchat' href="#snapchat"><FaSnapchatSquare/></a>
       </div>
       </div>
     </div>
