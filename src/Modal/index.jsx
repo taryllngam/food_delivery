@@ -11,7 +11,7 @@ export default function Modal({ visible, setVisible }) {
   const navigate = useNavigate();
   let { id } = useParams();
   const { value } = useContext(FoodContext);
-  const food = value.find((ele) => ele.id == id);
+  const food = value.find((ele) => ele.id === id);
   console.log(id);
 
   return (
